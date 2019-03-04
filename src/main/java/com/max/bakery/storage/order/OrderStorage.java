@@ -20,7 +20,7 @@ public abstract class OrderStorage {
     private static final Integer STORAGE_CAPACITY = 30;
 
     /**
-     * Method is buy necessary ingredient and put it in list
+     * Method buy necessary ingredient and put it in list
      */
     public synchronized void buyIngredients() {
         if (getList().size() < STORAGE_CAPACITY) {
@@ -33,7 +33,7 @@ public abstract class OrderStorage {
     }
 
     /**
-     * Method is imitate transfer raw materials to oven. If container with raw material isn't contain necessary amount,
+     * Method imitates transfer raw materials to oven. If container with raw material isn't contain necessary amount,
      * method send a command for buying process.
      */
     public synchronized void sendToOven() {
